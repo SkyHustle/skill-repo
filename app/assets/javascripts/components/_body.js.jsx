@@ -7,7 +7,7 @@ var Body = React.createClass({
     return { skills: [] }
   },
 
-  addSkill(skill){
+  handleSubmit(skill){
     var newState = this.state.skills.concat(skill);
     this.setState({ skills: newState })
   },
@@ -15,7 +15,7 @@ var Body = React.createClass({
   render() {
     return (
       <div>
-        <NewSkill addSkill={this.addSkill} />
+        <NewSkill handleSubmit={this.handleSubmit} />
         <AllSkills skills={this.state.skills} />
       </div>
     )
