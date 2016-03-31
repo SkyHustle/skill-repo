@@ -8,7 +8,7 @@ var NewSkill = React.createClass({
       type: 'POST',
       data: { skill: { name: name, details: details } },
       success: (skill) => {
-        this.props.handleSubmit(skill)
+        this.props.addSkill(skill)
       }
     });
   },
@@ -18,7 +18,7 @@ var NewSkill = React.createClass({
       <div>
         <input ref='name' placeholder='Enter name of skill' />
         <input ref='details' placeholder='Details' />
-        <button onClick={this.handleClick}>Submit</button>
+        <button onClick={this.handleClick}>Add Skill</button>
       </div>
     )
   }
