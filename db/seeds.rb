@@ -9,7 +9,7 @@ class Seed
   end
 
   def generate_skills
-    50.times do
+    5.times do
       skill = Skill.new
       skill.name = Faker::Lorem.word
       skill.details = Faker::Lorem.sentence(100)

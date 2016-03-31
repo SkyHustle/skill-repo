@@ -10,6 +10,8 @@ gem 'responders'
 gem 'faker'
 gem 'populator'
 
+gem 'react-rails'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'launchy'
