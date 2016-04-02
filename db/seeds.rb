@@ -12,8 +12,8 @@ class Seed
     5.times do
       skill = Skill.new
       skill.name = Faker::Lorem.word
-      skill.details = Faker::Lorem.sentence(100)
-      skill.level = [0, 1, 2].sample
+      skill.details = Faker::Lorem.sentence(30)
+      skill.level = [0, 1, 2, 3, 4].sample
       skill.save!
       puts "Generated skill # #{skill.id}"
     end
