@@ -53,7 +53,7 @@ var Body = React.createClass({
       <div>
         <NewSkill handleSubmit={this.handleSubmit} />
         <AllSkills skills={this.state.skills} handleDelete={this.handleDelete}
-          handleUpdate={this.handleUpdate}/>
+          handleUpdate={this.handleUpdate} />
       </div>
     )
   }
