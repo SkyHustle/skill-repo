@@ -11,10 +11,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'responders'
 gem 'faker'
 gem 'populator'
-
 gem 'react-rails'
-
 gem 'rails_12factor'
+
+gem 'rack-cors', :require => 'rack/cors'
 
 group :development, :test do
   gem 'rspec-rails'

@@ -1,4 +1,5 @@
 class Api::V1::SkillsController < Api::V1::BaseController
+
   def index
     respond_with Skill.all
   end
@@ -18,6 +19,6 @@ class Api::V1::SkillsController < Api::V1::BaseController
  private
 
   def skill_params
-    params.require(:skill).permit(:name, :details, :level)
+    params.require(:skill).permit(:id, :name, :details, :level)
   end
 end
